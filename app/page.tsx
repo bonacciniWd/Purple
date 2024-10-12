@@ -65,8 +65,6 @@ export default function Home() {
           <Spacebar />
           <About />
           <Spacebar />
-          <Details />
-          <Spacebar />
           <Testimonials />
           <Spacebar />
           <FAQAccordion />
