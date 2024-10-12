@@ -16,22 +16,22 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Experiência Tantrica",
-  description: "Bem vindo(a) à maior e melhor experiência tântrica da sua vida",
-  keywords: "experiência tântrica, tantra, meditação, crescimento pessoal", // Adicione palavras-chave relevantes
+  title: "Purple Marketing",
+  description: "Bem vindo(a) à página da empresa Purple Marketing",
+  keywords: "", // Adicione palavras-chave relevantes
   authors: [
     { name: "VRZ Studio", url: "https://vrz-studio.tech" }
   ],
   openGraph: {
-    title: "Experiência Tantrica",
-    description: "Bem vindo(a) à maior e melhor experiência tântrica da sua vida",
-    url: "https://daiane-grison.vercel.app",
+    title: "Purple Marketing",
+    description: "Bem vindo(a) à página da empresa Purple Marketing",
+    url: "",
     images: [
       {
-        url: "https://i.ibb.co/CQwngXc/Capa-Icone-Landing-Page.png", // Adicione o caminho da imagem de SEO
+        url: "https://i.ibb.co/6y0NwLM/DALL-E-2024-10-11-17-12-18-A-modern-minimalistic-logo-for-Purple-Mind-Marketing-featuring-the-words.webp", // Adicione o caminho da imagem de SEO
         width: 1200,
         height: 630,
-        alt: "Despertar interior",
+        alt: "Marketing Profissional",
       },
     ],
   },
