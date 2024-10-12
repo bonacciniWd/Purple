@@ -1,0 +1,286 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Importar fonte Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Aplicar a fonte Montserrat a todo o site */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; /* Definir Montserrat como fonte padrão */
+  color: #333; /* Cor padrão do texto, ajuste conforme necessário */
+  line-height: 1.6; /* Melhorar a legibilidade */
+}
+
+/* Estilo padrão para títulos e subtítulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; /* Garantir que títulos usem a mesma fonte */
+  font-weight: 700; /* Peso negrito para títulos */
+}
+
+/* Estilo para parágrafos */
+p {
+  font-family: 'Montserrat', sans-serif; /* Garantir que parágrafos usem a mesma fonte */
+  font-weight: 400; /* Peso normal para o texto */
+}
+
+/* Outros estilos globais, se necessários */
+a {
+  font-family: 'Montserrat', sans-serif; /* Garantir que links usem a mesma fonte */
+}
+
+button {
+  font-family: 'Montserrat', sans-serif; /* Garantir que botões usem a mesma fonte */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.bg-tantra-dark {
+  background: linear-gradient(90deg, #10002b,  #3c096c, #7b2cbf, #e6bbff);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+
+
+.bg-tantra {
+  background: linear-gradient(270deg, #4B2D47, #BE163F, #2A1820, );
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.shadow-lg {
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.text-tantra-light {
+  color: #f9e2ea; /* Rosa claro */
+}
+
+.text-tantra-light2 {
+  color: #f7b7cd; /* Rosa claro */
+}
+
+.text-tantra-dark {
+  color: #be153f; /* Bordô */
+}
+
+
+
+.spacebar {
+  width: 100%; /* Preenche a largura total */
+  height: 6px; /* Altura do espaço */
+  background: linear-gradient(90deg, #424874, #dcd6f7, #a6b1e1, #cacfd6); /* Gradiente dourado */
+  background-size: 300% 50%; /* Aumenta o tamanho do gradiente para criar o movimento */
+  animation: moveGradient 10s linear infinite; /* Animação de movimento */
+}
+
+/* Animação que move o gradiente da esquerda para a direita */
+
+
+.moving-gradient {
+  background: linear-gradient(90deg, #131312, #D3B34B,  #2e2b23); /* Gradiente dourado */
+  background-size: 300% 100%; /* Tamanho ajustado para o movimento */
+  animation: moveGradient 10s linear infinite alternate; /* Animação de vai e volta */
+}
+
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+
+@keyframes slow-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 10s linear infinite; /* Duração de 30 segundos */
+}
+
+/* Gradiente de fundo com animação */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.80;
+    transform: scale(1.10); /* Ajuste o valor conforme a intensidade do efeito desejado */
+  }
+}
+
+.animate-pulse {
+  animation: pulse 1.5s infinite; /* Ajuste a duração conforme necessário */
+}
+
+.border-gold {
+  border-color: #CBA148;
+}
+
+/* Gradiente animado */
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #CBA148, #A77B13);
+  background-size: 200% 100%;
+  animation: gradientShift 3s linear infinite;
+}
+
+/* Animação de gradiente */
+@keyframes gradientShift {
+  0% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-card {
+  background: #fff; /* Cor de fundo do cartão */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 16px; /* Espaçamento interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra do cartão */
+  margin: 8px; /* Espaçamento entre cartões */
+  width: 80%; /* Largura do cartão */
+  max-width: 500px; /* Largura máxima do cartão */
+  text-align: center; /* Alinhamento do texto */
+}
+
+.testimonial-card img {
+  object-fit: cover; /* Ajuste a imagem para cobrir a área do cartão */
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra preta suave */
+}
+
+.text-shadow-2 {
+  text-shadow: 0.5px 0.5px 1px rgba(20, 20, 19, 0.77); /* Sombra preta suave */
+}
+
+/* Adiciona o efeito de pulsação ao botão */
+@keyframes pulses {
+  0% {
+    box-shadow: 0 0 0 0 rgba(219, 33, 179, 0.889);
+  }
+  70% {
+    box-shadow: 0 0 0 22px rgba(211, 179, 75, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(211, 179, 75, 0);
+  }
+}
+
+.pulse-button {
+  background: linear-gradient(0deg, #CBA148, #D3B34B, #E8D881, #A77B13); /* Gradiente inicial */
+  background-size: 200% 200%; /* Isso permite a animação de transição suave */
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid #D3B34B; /* Borda dourada */
+  font-weight: bold;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  color: #fff; /* Texto branco */
+  font-size: 1rem;
+  animation: pulses 2s infinite;
+  transition: background-position 0.5s ease-in-out, border-color 0.3s ease-in-out;
+  background-position: 0% 50%;
+}
+
+.pulse-button:hover {
+  background-position: 100% 50%; /* Inverte o gradiente ao passar o mouse */
+  background: linear-gradient(-270deg, #A77B13, #E8D881, #D3B34B, #CBA148); /* Gradiente invertido */
+  border-color: #A77B13; /* Muda a cor da borda no hover */
+  color: #fff;
+}
+
+@keyframes pulses {
+  0% {
+    box-shadow: 0 0 0 0 rgba(201, 220, 32, 0.889);
+  }
+  70% {
+    box-shadow: 0 0 0 22px rgba(201, 220, 32, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(2201, 220, 32, 0);
+  }
+}
+
+
+@keyframes ping {
+  75%, 100% {
+      transform: scale(1.2);
+      opacity: 0;
+  }
+}
+.animate-ping {
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(-20%);
+      animation-timing-function: cubic-bezier(0.8,0,1,1);
+      opacity: 0.8;
+  }
+  50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0,0,0.2,1);
+      opacity: 1;
+  }
+
+}
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+.image-wrapper {
+  border-radius: 20px;
+  pointer-events: none;
+}
