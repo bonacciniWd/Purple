@@ -4,7 +4,6 @@ import Head from 'next/head';
 import Headline from '../components/Headline';
 import About from '../components/About';
 import FAQAccordion from '../components/FAQAccordion';
-import Details from '../components/Details';
 import Testimonials from '../components/Testimonials';
 import Spacebar from '../components/Spacebar';
 import WhatsappButton from '../components/WhatsappButton';
