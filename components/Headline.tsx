@@ -24,13 +24,13 @@ export default function Headline({ videoRef }: HeadlineProps) {
         Seu navegador não suporta a tag de vídeo.
       </video>
 
-      <div className="relative z-20 my-1">
+      <div className="relative z-20 mt-14">
         <Image
           src="/logo-2.png"
           alt="Purple Mind Marketing"
           className="mx-auto animate-pulse"
-          width={350} 
-          height={350}
+          width={320} 
+          height={320}
         />
       </div>
       
@@ -51,7 +51,7 @@ export default function Headline({ videoRef }: HeadlineProps) {
           document.getElementById('1')?.scrollIntoView({ behavior: 'smooth' });
         }}
       >
-        <FaSortDown className="flex animate-bounce text-white size-8 mt-48"/>
+        <FaSortDown className="flex animate-bounce text-white size-8 mt-36"/>
       </button>
     </main>
   );

@@ -88,7 +88,7 @@ button {
 
 .spacebar {
   width: 100%; /* Preenche a largura total */
-  height: 6px; /* Altura do espaço */
+  height: 4px; /* Altura do espaço */
   background: linear-gradient(90deg, #424874, #dcd6f7, #a6b1e1, #cacfd6); /* Gradiente dourado */
   background-size: 300% 50%; /* Aumenta o tamanho do gradiente para criar o movimento */
   animation: moveGradient 10s linear infinite; /* Animação de movimento */
